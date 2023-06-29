@@ -25,3 +25,8 @@ vim.g.vimtex_compiler_method = 'latexmk'
 -- Most VimTeX mappings rely on localleader and this can be changed with the
 -- following line. The default is usually fine and is the symbol "\".
 vim.g.maplocalleader = " "
+
+-- This puts the output files in a folder
+vim.g.vimtex_compiler_latexmk = {
+    build_dir = 'output',
+}
