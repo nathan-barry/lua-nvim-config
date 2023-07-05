@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
   use("tpope/vim-commentary")
   use("ellisonleao/gruvbox.nvim")
   use("lervag/vimtex")
+  use {'mg979/vim-visual-multi', branch = 'master'} -- ctrl up or down
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
 end)
-

@@ -31,10 +31,20 @@ require('lualine').setup {
     lualine_c = {'filename'},
     lualine_x = {'location'},
     lualine_y = {},
-    lualine_z = {}
+    lualine_z = { 
+          {
+            'diagnostics', 
+            sources = {'nvim_lsp'}, 
+          }, 
+          {
+            'buffer', 
+            sources = {'nvim'}
+          } 
+        }
   },
   tabline = {},
   winbar = {},
   inactive_winbar = {},
   extensions = {}
 }
+
