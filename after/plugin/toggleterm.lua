@@ -8,3 +8,4 @@ vim.cmd([[
 
 vim.api.nvim_set_keymap('n', '<C-`>', '<Cmd>exe v:count1 . "ToggleTerm"<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<C-`>', '<Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<C-`>', '<C-\\><C-n><Cmd>exe v:count1 . "ToggleTerm"<CR>', { noremap = true, silent = true })
