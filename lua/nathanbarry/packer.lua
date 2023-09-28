@@ -47,5 +47,9 @@ return require('packer').startup(function(use)
   use("lervag/vimtex")
   use {'mg979/vim-visual-multi', branch = 'master'} -- ctrl up or down
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {
+    'windwp/nvim-autopairs',
+    config = function() require('nvim-autopairs').setup{} end
+  }
 
 end)
