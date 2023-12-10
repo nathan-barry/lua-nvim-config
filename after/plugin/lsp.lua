@@ -22,3 +22,15 @@ cmp.setup({
         ['<S-Tab>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
     },
 })
+
+require'lspconfig'.pylsp.setup {
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = { enabled = false },
+        flake8 = { enabled = false },
+        -- You can add any other style-related plugins here to disable them
+      }
+    }
+  }
+}

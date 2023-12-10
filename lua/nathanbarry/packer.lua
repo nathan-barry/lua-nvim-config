@@ -58,10 +58,11 @@ return require('packer').startup(function(use)
     requires = { 'nvim-treesitter/nvim-treesitter' }
   }
 
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-  end}
-
   use 'fatih/vim-go'
 
 end)
+
+-- commands
+-- :PackerUpdate
+-- :PackerSync
+-- :TSUpdate <- when treesitter breaks

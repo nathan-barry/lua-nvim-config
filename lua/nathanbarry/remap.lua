@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>t", ":NERDTreeToggle<CR>")
+vim.keymap.set("n", "<leader>t", ":NERDTreeFocus<CR>")
 
 vim.keymap.set("n", "Q", "<nop>")
 
