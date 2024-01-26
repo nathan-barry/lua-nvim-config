@@ -16,5 +16,3 @@ vim.api.nvim_set_keymap('n', '<C-k>', '<Cmd>lua vim.diagnostic.open_float()<CR>'
 -- vim.api.nvim_set_keymap('i', '[', '[]<left>', {noremap = true, silent = true})
 -- vim.api.nvim_set_keymap('i', '{', '{}<left>', {noremap = true, silent = true})
 
-vim.api.nvim_set_keymap('n', '{', '}', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '}', '{', { noremap = true, silent = true })
